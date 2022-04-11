@@ -11,6 +11,9 @@ const meta: Meta = {
     children: {
       defaultValue: 'Hello',
     },
+    checked: {
+      defaultValue: true,
+    },
   },
 };
 
@@ -20,6 +23,7 @@ const Template: Story<Props> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 export const Primary = Template.bind({});
+export const Secondary = Template.bind({});
 
 Default.args = {
   variant: 'primary',
@@ -29,3 +33,5 @@ Default.args = {
 };
 
 Primary.args = {};
+
+Secondary.args = {};
